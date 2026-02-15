@@ -1,4 +1,8 @@
 import Card from "./Card";
+import githubIcon from "../assets/github.svg";
+import linkedinIcon from "../assets/linkedin.svg";
+import emailIcon from "../assets/Email.svg";
+
 
 export default function Contact({ email, links }) {
   return (
@@ -17,6 +21,7 @@ export default function Contact({ email, links }) {
         style={{ justifyContent: "flex-start", marginTop: 12 }}
       >
         <a className="btn btnPrimary" href={`mailto:${email}`}>
+          <img src={emailIcon} className="icon" alt="email" />
           Email Me
         </a>
         <a
@@ -25,7 +30,8 @@ export default function Contact({ email, links }) {
           target="_blank"
           rel="noreferrer"
         >
-          GitHub
+          <img src={githubIcon} className="icon" alt="github" />
+          {/* GitHub */}
         </a>
         <a
           className="btn btnGhost"
@@ -33,7 +39,8 @@ export default function Contact({ email, links }) {
           target="_blank"
           rel="noreferrer"
         >
-          LinkedIn
+          <img src={linkedinIcon} className="icon" alt="linkedin" />
+          {/* LinkedIn */}
         </a>
       </div>
     </>

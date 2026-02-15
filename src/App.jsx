@@ -1,5 +1,13 @@
 import "./App.css";
-import { data } from "./data/data.js";
+import { data } from "./data/data.js"
+import Navbar from "./components/Navbar.jsx"
+import Contact from "./components/Contact.jsx";
+import Education from "./components/Education.jsx"
+import Footer from "./components/Footer.jsx"
+import Hero from "./components/Hero.jsx"
+import Projects from "./components/Projects.jsx"
+import Section from "./components/Section.jsx"
+import Skills from "./components/Skills.jsx"
 
 export default function App() {
   return (

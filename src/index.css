@@ -16,10 +16,11 @@ body {
     margin: 0;
     min-height: 100vh;
     background:
-        radial-gradient(900px 500px at 15% 8%, #2f5aa855, transparent 60%),
-        radial-gradient(900px 500px at 85% 18%, #1f3b7355, transparent 60%),
-        radial-gradient(900px 500px at 50% 95%, #121f3d66, transparent 60%),
-        linear-gradient(180deg, #0a1020 0%, #121f3d 100%);
+    radial-gradient(900px 500px at 15% 8%, #c3bef0 , transparent 60%),
+    radial-gradient(900px 500px at 85% 18%, #CADEFC, transparent 60%),
+    radial-gradient(900px 500px at 50% 95%, #CCA8E9 , transparent 60%),
+    linear-gradient(180deg, #DEFCF9 0%, #e6f0f6 100%);
+
 }
 
 #root {

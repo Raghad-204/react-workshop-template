@@ -21,7 +21,7 @@ html {
 
 /* Top nav */
 .navbar {
-    position: sticky;
+    position:sticky;
     top: 14px;
     z-index: 20;
     margin: 14px;
@@ -78,7 +78,8 @@ html {
 }
 
 .navlinks a.cta {
-    background: #072d77;
+    /* background: #072d77;  */
+    background-image: radial-gradient(rgb(204, 168, 233),rgb(202, 222, 252) ) ;
     color: white;
     border-color: rgba(7, 45, 119, 0.2);
 }
@@ -150,6 +151,7 @@ html {
 
     background: rgba(7, 45, 119, 0.06);
     border: 1px solid rgba(7, 45, 119, 0.16);
+    overflow: hidden;
 }
 
 .avatarWrap::after {
@@ -163,8 +165,8 @@ html {
 
 .photo,
 .avatar {
-    width: 108px;
-    height: 108px;
+    width: 140px;
+    height: 140px;
     border-radius: 22px;
     display: grid;
     place-items: center;
@@ -173,6 +175,11 @@ html {
     background: rgba(255, 255, 255, 0.9);
     border: 2px solid rgba(255, 255, 255, 0.95);
     box-shadow: 0 10px 24px rgba(2, 6, 23, 0.12);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .avatar {
@@ -214,7 +221,7 @@ html {
     width: 34px;
     height: 3px;
     border-radius: 999px;
-    background: rgba(7, 45, 119, 0.55);
+    background: rgb(204, 168, 233);
     display: inline-block;
 }
 
@@ -247,7 +254,9 @@ html {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
     padding: 11px 16px;
     border-radius: 14px;
     text-decoration: none;
@@ -256,6 +265,12 @@ html {
         transform 0.15s ease,
         filter 0.15s ease;
 }
+.icon {
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
 
 .btn:hover {
     transform: translateY(-2px);
@@ -263,14 +278,16 @@ html {
 }
 
 .btnPrimary {
-    background: #072d77;
+    /* background: rgb(204, 168, 233); */
+     background: linear-gradient( to bottom,rgb(204, 168, 233),#DCC4F2 );
     color: #fff;
 }
 
 .btnGhost {
-    background: rgba(255, 255, 255, 0.8);
-    color: #072d77;
-    border: 1px solid rgba(15, 23, 42, 0.15);
+    /* background: rgb(202, 222, 252); */
+    background-image: radial-gradient(rgb(204, 168, 233),rgb(202, 222, 252) ) ;
+    color: #CCA8E9;
+    border: 1px solid rgb(202, 222, 252);
 }
 
 /* Cards layout */
@@ -343,6 +360,21 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.skillPill:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.skillIcon {
+  width: 29px;
+  height: 29px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+
+}
+.skillPill:hover .skillIcon {
+  transform: scale(1.15);
 }
 
 .skillTag {
